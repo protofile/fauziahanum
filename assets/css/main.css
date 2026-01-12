@@ -625,7 +625,6 @@ video {
 body {
   background-image: url(../images/body-bg.jpg);
   background-size: cover;
-  background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
 }

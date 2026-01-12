@@ -32,7 +32,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="hero-img">
-                                <img class="rounded-3xl for-desktop" src="assets/images/page-cover.jpg" alt="">
+                                <img class="rounded-3xl" src="assets/images/kelas-rias-wajah.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -55,7 +55,7 @@
                                         </div>
                                     </div>
                                     <div class="flex items-center gap-2">
-                                        <a href="https://youtu.be/ucwIbsWVTCE?list=RDucwIbsWVTCE" class="btn pop-link"><i class='ri-eye-fill'></i> Tonton</a>
+                                        <a target="_blank" href="https://drive.google.com/file/d/1jIKknjUbqEWtdZ5DuKdKD8cWnVGQwc_g/view" class="btn pop-link"><i class='ri-eye-fill'></i> Tonton</a>
                                     </div>
                                 </div>
                                 <div class="post-item">
@@ -69,7 +69,7 @@
                                         </div>
                                     </div>
                                     <div class="flex items-center gap-2">
-                                        <a href="#" class="btn pop-link"><i class='ri-eye-fill'></i> Tonton</a>
+                                        <a target="_blank" href="https://drive.google.com/file/d/1baBLsCABZh7xfY_rXANxg0nB32skEGxy/view" class="btn pop-link"><i class='ri-eye-fill'></i> Tonton</a>
                                     </div>
                                 </div>
                                 <div class="post-item">
@@ -83,7 +83,7 @@
                                         </div>
                                     </div>
                                     <div class="flex items-center gap-2">
-                                        <a href="#" class="btn pop-link"><i class='ri-eye-fill'></i> Tonton</a>
+                                        <a target="_blank" href="https://drive.google.com/file/d/1Fg1xwTLYutlDgEKF_hM9AZIGbHKVUZiX/view" class="btn pop-link"><i class='ri-eye-fill'></i> Tonton</a>
                                     </div>
                                 </div>
                                 <div class="post-item">
@@ -97,7 +97,7 @@
                                         </div>
                                     </div>
                                     <div class="flex items-center gap-2">
-                                        <a href="#" class="btn pop-link"><i class='ri-eye-fill'></i> Tonton</a>
+                                        <a target="_blank" href="https://drive.google.com/file/d/1hq2zq43JtCKKaasr8D4ncdqdgNHSRmBr/view" class="btn pop-link"><i class='ri-eye-fill'></i> Tonton</a>
                                     </div>
                                 </div>
                             </div>
@@ -124,29 +124,17 @@
                 $("header").load("component/header.html");
                 $("footer").load("component/footer.html");
 
-                $('.pop-link').on('click', function(e) {
-                    e.preventDefault();
-                    
-                    var targetUrl = $(this).attr('href');
-                    
-                    // Membuat elemen iframe secara dinamis
-                    var iframeHtml = '<iframe src="' + targetUrl + '" frameborder="0" allowfullscreen></iframe>';
-                    
-                    // Masukkan iframe ke dalam .popup
-                    $('.iframe-wrap').append(iframeHtml);
-                    
-                    // Tampilkan overlay
-                    $('.popup-overlay').addClass('show');
-                });
-
-                // 2. Tutup Popup dan Hapus Iframe
-                $('.bt-close').on('click', function() {
-                    // Sembunyikan overlay
-                    $('.popup-overlay').removeClass('show');
-                    
-                    // Hapus elemen iframe dari DOM agar bersih
-                    $('.popup iframe').remove();
-                });
+                // $('.pop-link').on('click', function(e) {
+                //     e.preventDefault();
+                //     var targetUrl = $(this).attr('href');
+                //     var iframeHtml = '<iframe src="' + targetUrl + '" frameborder="0" allowfullscreen></iframe>';
+                //     $('.iframe-wrap').append(iframeHtml);
+                //     $('.popup-overlay').addClass('show');
+                // });
+                // $('.bt-close').on('click', function() {
+                //     $('.popup-overlay').removeClass('show');
+                //     $('.popup iframe').remove();
+                // });
             });
         </script>
 
